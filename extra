@@ -1,0 +1,66 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+
+Basic JavaScript
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+MongoDb Basic >27017  (local/cloud)
+Redis  > 6379
+Node-Es6(.babel)
+Paytm-Payment
+Api with NodeJS(Rest)>1
+DashBoard(Crud)
+Testing
+Login/Logout(JWT)
+Oauth(with github)
+Oauth(with google)
+ImageUpload
+Email With Node(sendgird)(https://app.sendgrid.com/)
+NodeJs with postgres
+OO_NodeJs
+GraphQl API
+Github
+--Deployment---
+Nginx
+Pm2
+Docker
+Heroku
+Chatapp
+FIREBASE
+--------NOT---------
+React/Angular
+Html/css/jquery
+
+///////////
+Node Single thread asynchronous non blocking I/O 
+
+JSON> JavaScript Object Notation
+[
+    {
+        name:'John',
+        class: 'Ui'
+    },
+    {
+        name:'Keev',
+        class: 'React',
+        city:'London'
+    }
+]
+
+////////////////////////////////
+package.json
+////////////////////////////////
+> Entry Point
+> scripts (start,stop,build,test )
+> packages (npm package)
+> meta data (name,version, description)
+
+////////////////////////////////
+How to generate package..json
+////////////////////////////////
+**NodeJs must be there in my system (node -v)
+> go inside the folder using cmd 
+> npm init
+> answer all questions
