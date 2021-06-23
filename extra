@@ -64,3 +64,23 @@ How to generate package..json
 > go inside the folder using cmd 
 > npm init
 > answer all questions
+
+
+> Local Dependencies
+> Dev Dependencies
+> Global Dependencies
+////////////////////////////////
+How to install local dependencies
+////////////////////////////////
+**NodeJs Must be install in the system
+> go inside the folder using cmd 
+> npm i packagename
+
+> npm uninstall packagename
+
+////////////////////////////////
+How to install dev dependencies
+////////////////////////////////
+**NodeJs Must be install in the system
+> go inside the folder using cmd 
+> npm i packagename --save-dev 
