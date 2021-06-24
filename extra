@@ -27,6 +27,7 @@ Nginx
 Pm2
 Docker
 Heroku
+
 Chatapp
 FIREBASE
 --------NOT---------
@@ -84,3 +85,26 @@ How to install dev dependencies
 **NodeJs Must be install in the system
 > go inside the folder using cmd 
 > npm i packagename --save-dev 
+
+
+Demo Meeting Link: https://zoom.us/j/86301775496
+Password:112233
+Demo Meeting Link: https://zoom.us/j/82829069013   
+Password: 112233
+
+
+////////////////////////////////
+es5 
+
+var a = 10
+var b = "my age is "+a 
+"my age is 10" 
+
+
+es6 
+var a = 10
+var b = `my age is ${a}`
+"my age is 10" 
+
+
+npm run keyname 

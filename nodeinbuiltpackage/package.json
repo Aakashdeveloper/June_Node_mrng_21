@@ -1,0 +1,15 @@
+{
+  "name": "inbuilt",
+  "version": "1.0.0",
+  "description": "this is node inbuilt",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node staticapi.js",
+    "codeTest":"node server.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "nareshit",
+  "license": "ISC"
+}
