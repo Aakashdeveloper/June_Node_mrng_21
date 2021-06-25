@@ -108,3 +108,26 @@ var b = `my age is ${a}`
 
 
 npm run keyname 
+
+////////////////////////////////
+Global package are independent of the application
+> it is use to start stop build your app 
+> it will not install in any folder of application
+> it will go in system directory mainly C drive 
+> It will also not add in package.json
+> Very few packages go global
+> need admin access to install package
+
+nodemon > restart the application as soon as detect any change
+
+
+////////////////////////////////
+Step to install Global package
+///////////////////////////////
+# window 
+> open cmd as admin 
+> npm i -g packagename 
+
+# mac/linux
+> open terminal 
+> sudo npm i -g packagename
