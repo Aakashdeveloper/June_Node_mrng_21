@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "this is node fullstack",
   "scripts": {
-    "start":"node app.js",
-    "dev":"nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [
     "node",
@@ -13,6 +13,9 @@
   "author": "developerFunnel",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   }
 }
