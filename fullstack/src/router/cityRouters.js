@@ -50,10 +50,10 @@ var city = [
     }
 ]
 
-
 cityRouter.route('/')
     .get(function(req,res){
-        res.send(city)
+		//res.send(city)
+		res.render('city',{title:'City Page'})
     })
 
 cityRouter.route('/details')

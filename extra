@@ -131,3 +131,6 @@ Step to install Global package
 # mac/linux
 > open terminal 
 > sudo npm i -g packagename
+
+https://www.mongodb.com/try/download/community 
+>  in c drive create one folder by name of data/db
