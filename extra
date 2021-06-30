@@ -5,6 +5,7 @@ Basic JavaScript
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+/////////////////////////////
 Third Party Api (Weather Api)
 MongoDb Basic >27017  (local/cloud)
 Redis  > 6379
@@ -134,3 +135,46 @@ Step to install Global package
 
 https://www.mongodb.com/try/download/community 
 >  in c drive create one folder by name of data/db
+
+
+//Sql 
+| Sno | Hindi | English | Computer
+| 1   | 80    |         |
+| 2   |       | 80      | 
+| 3   | 80    |         |    80
+
+//no-sql 
+[
+    {
+        sno:1,
+        Hindi:80
+    },
+    {
+        sno:2,
+        English:80
+    },
+    {
+        sno:3,
+        Hindi:80,
+        Computer:80
+    }
+]
+
+
+>>>>>>>>>>
+step to run mongodb 
+<<<<<<<<<<<< <<
+
+// Mongo Server //   
+> open first cmd 
+> go inside the mongodb folder 
+cd c:\program file\mongodb\server\4.4\bin 
+> mongod.exe  
+(Above step will start mongo server on port 27017)
+
+//// to Start mongo console /////
+> open second cmd   
+> go inside the mongodb folder 
+cd c:\program file\mongodb\server\4.4\bin 
+> mongo.exe       
+
