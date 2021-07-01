@@ -22,6 +22,7 @@ db.first.insert({_id:3,name:'Karan',city:'Mumbai'})
 db.first.insert({_id:3,name:'Nippun',city:'Delhi'})
 >>>>>> find record 
 db.first.find()
-
+db.first.find({id:768676})
+db.first.find({id:768676,city:'delhi'})
 
 db.test.insert([{},{},{}])

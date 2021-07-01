@@ -4,8 +4,13 @@ var dotenv = require('dotenv');
 dotenv.config();
 var fs = require('fs');
 var port = process.env.PORT || 5600;
-var hotelRouter = require('./src/router/hotelRoutes')
-var cityRouter = require('./src/router/cityRouters');
+var menu = [
+	{link:'/',name:'Home'},
+	{link:'/hotel',name:'Hotels'},
+	{link:'/city',name:'City'}
+]
+var hotelRouter = require('./src/router/hotelRoutes')(menu)
+var cityRouter = require('./src/router/cityRouters')(menu);
 var morgan = require('morgan');
 // middleware
 app.use(morgan('combined'))
@@ -21,7 +26,7 @@ app.set('view engine', 'ejs')
 
 app.get('/',function(req,res){
     //res.send("Hii From express");
-    res.render('home',{title:'Home Page',keyword:'Node Fullstack'})
+    res.render('home',{title:'Home Page',keyword:'Node Fullstack',menu:menu})
 })
 
 app.use('/hotel',hotelRouter);

@@ -178,3 +178,6 @@ cd c:\program file\mongodb\server\4.4\bin
 cd c:\program file\mongodb\server\4.4\bin 
 > mongo.exe       
 
+///////////
+params: /
+queryParams: ?
