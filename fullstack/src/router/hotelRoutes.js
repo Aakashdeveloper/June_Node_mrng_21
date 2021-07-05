@@ -1,7 +1,8 @@
 var express = require('express');
 var hotelRouter = express.Router();
 var mongodb = require('mongodb').MongoClient;
-var url = "mongodb://127.0.0.1:27017";
+//var url = "mongodb://127.0.0.1:27017";
+var url = "mongodb+srv://<username>:<password>@cluster0.f8vmc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 function router(menu){
 	hotelRouter.route('/')
