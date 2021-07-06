@@ -6,8 +6,8 @@ NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
-/////////////////////////////
 Redis  > 6379
+/////////////////////////////
 MongoDb Basic >27017  (local/cloud)
 Node-Es6(.babel)
 Paytm-Payment
@@ -186,3 +186,10 @@ queryParams: ?
 npm i ejs express request
 
 https://redis.io/download
+redis 6379
+
+> Keys *
+> set keyname value
+> get keyname
+> del keyname
+> FLUSH ALL
