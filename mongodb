@@ -26,3 +26,54 @@ db.first.find({id:768676})
 db.first.find({id:768676,city:'delhi'})
 
 db.test.insert([{},{},{}])
+
+///
+delete
+////////////////////////////////
+db.test.remove() >> remove all the data
+db.test.remove({_id:1}) >> remove particular record
+
+db.users.remove({"name":"Nikita"})
+////////////////////////////////
+update(update city=delhi where id is 1)
+////////////////////////////////
+db.test.update(
+    {_id: 1},
+    {
+        $set:{
+            "city":"delhi"
+        }
+    }
+)
+
+
+db.hotels.update(
+    {id:"123334"},
+    {
+        $set:{
+            "locality": "Sector 17"
+        }
+    }
+)
+
+///////////
+projection
+
+> select * from hotels where city = chandigarh;
+db.hotels.find({city: "Chandigarh"})
+
+db.hotels.find({query},{projection})
+
+db.hotels.find({city:"Chandigarh"},{name:1,locality:1,_id:0})
+
+db.hotels.find({},{name:1,locality:1,_id:0})
+
+db.hotels.find({},{name:1,aggregate_rating:1,_id:0})
+
+
+db.hotels.find({aggregate_rating:4},{name:1,aggregate_rating:1,_id:0})
+
+db.hotels.find({aggregate_rating:{$gt:"4.0"}},{name:1,aggregate_rating:1,_id:0})
+
+
+db.hotels.find({aggregate_rating:{$gt:"4.0"}},{name:1,aggregate_rating:1,_id:0}).sort({aggregate_rating:1})

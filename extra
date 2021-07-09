@@ -7,17 +7,17 @@ Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
 Third Party Api (Weather Api)
 Redis  > 6379
-/////////////////////////////
-MongoDb Basic >27017  (local/cloud)
 Node-Es6(.babel)
-Paytm-Payment
+MongoDb Basic >27017  (local/cloud)
+ImageUpload
+/////////////////////////////
 Api with NodeJS(Rest)>1
 DashBoard(Crud)
 Testing
 Login/Logout(JWT)
 Oauth(with github)
 Oauth(with google)
-ImageUpload
+Paytm-Payment
 Email With Node(sendgird)(https://app.sendgrid.com/)
 NodeJs with postgres
 OO_NodeJs
