@@ -10,10 +10,12 @@ Redis  > 6379
 Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
 ImageUpload
-/////////////////////////////
 Api with NodeJS(Rest)>1
+/////////////////////////////
+Swagger
 DashBoard(Crud)
 Testing
+
 Login/Logout(JWT)
 Oauth(with github)
 Oauth(with google)
@@ -193,3 +195,15 @@ redis 6379
 > get keyname
 > del keyname
 > FLUSH ALL
+
+
+npm i body-parser express express mongodb cors 
+npm i ejs chai chai-http 
+
+C> Create (post) (insert the data)
+R> Read   (get)  (retrive the data)
+U> Update (put)  (update the data)
+D> Delete (delete) (remove the data)
+
+/// https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
+// https://www.postman.com/
