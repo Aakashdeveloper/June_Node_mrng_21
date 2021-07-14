@@ -8,33 +8,39 @@ const cors = require('cors');
 const mongoUrl = "mongodb://localhost:27017";
 let db;
 let col_name = "dashboard";
-const swaggerUi = require('swagger-ui-express');
-const package = require('./package.json');
-const swaggerDocument = require('./swagger.json');
-
-swaggerDocument.info.version = package.version;
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 // use middleware as bodyparser for post the data
 app.use(bodyParser.urlencoded({extend:true}));
 app.use(bodyParser.json());
 // using fro cross origin resource sharing
 app.use(cors())
+// static file path 
+app.use(express.static(__dirname+'/public'))
+//Html File
+app.set('views','./src/views');
+// view engine
+app.set('view engine', 'ejs')
+
 
 app.get('/health', (req,res) => {
     res.status(200).send('Health Ok')
 })
 
+app.get('/', (req,res) => {
+    db.collection(col_name).find().toArray((err,result) => {
+        if(err) throw err;
+        res.render('index',{data:result})
+    })
+})
+
+app.get('/new', (req,res) => {
+    res.render('admin')
+})
+
 // Read
 app.get('/users', (req,res) => {
     var query = {}
-    if(req.query.role && req.query.city){
-        query ={role:req.query.role, city:req.query.city, isActive:true}
-    }else if( req.query.city){
-        query ={city:req.query.city, isActive:true}
-    }else{
-        query = {isActive: true}
-    }
+    query = {isActive: true}
     db.collection(col_name).find(query).toArray((err,result) => {
         if(err) throw err;
         res.status(200).send(result)
@@ -51,9 +57,18 @@ app.get('/user/:id', (req,res) => {
 // insert
 app.post('/addUser', (req,res) => {
     console.log(req.body)
-    db.collection(col_name).insert(req.body,(err,result) => {
+    const data = {
+        name: req.body.name,
+        city: req.body.city,
+        phone: req.body.phone,
+        role: req.body.role?req.body.role:'User',
+        isActive: true
+    }
+    db.collection(col_name).insert(data,(err,result) => {
         if(err) throw err;
-        res.send('Data Added')
+        //res.send('Data Added')
+        res.redirect('/')
+
     })
 })
 

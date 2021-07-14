@@ -11,20 +11,22 @@ Node-Es6(.babel)
 MongoDb Basic >27017  (local/cloud)
 ImageUpload
 Api with NodeJS(Rest)>1
-/////////////////////////////
 Swagger
 DashBoard(Crud)
+/////////////////////////////
 Testing
-
 Login/Logout(JWT)
+
 Oauth(with github)
 Oauth(with google)
+
 Paytm-Payment
 Email With Node(sendgird)(https://app.sendgrid.com/)
+
 NodeJs with postgres
-OO_NodeJs
 GraphQl API
 Github
+
 --Deployment---
 Nginx
 Pm2
