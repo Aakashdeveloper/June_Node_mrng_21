@@ -13,16 +13,15 @@ ImageUpload
 Api with NodeJS(Rest)>1
 Swagger
 DashBoard(Crud)
-/////////////////////////////
 Testing
+Email With Node(sendgird)(https://app.sendgrid.com/)
+/////////////////////////////
 Login/Logout(JWT)
 
 Oauth(with github)
 Oauth(with google)
 
 Paytm-Payment
-Email With Node(sendgird)(https://app.sendgrid.com/)
-
 NodeJs with postgres
 GraphQl API
 Github
@@ -209,3 +208,6 @@ D> Delete (delete) (remove the data)
 
 /// https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh
 // https://www.postman.com/
+
+
+echo "export SENDGRID_API_KEY='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'" > sendgrid.env
