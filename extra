@@ -17,9 +17,10 @@ Testing
 Email With Node(sendgird)(https://app.sendgrid.com/)
 Login/Logout(JWT)
 Oauth(with github)
+NodeJs with postgres
 /////////////////////////////
 Oauth(with google)
-NodeJs with postgres
+
 
 Paytm-Payment
 GraphQl API
@@ -212,3 +213,8 @@ D> Delete (delete) (remove the data)
 echo "export SENDGRID_API_KEY='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'" > sendgrid.env
 
 npm i bcryptjs body-parser cors express jsonwebtoken mongoose 
+
+//////
+step to start postgres server
+> pg_ctl -D /usr/local/var/postgres start
+> 5324
