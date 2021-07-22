@@ -18,20 +18,18 @@ Email With Node(sendgird)(https://app.sendgrid.com/)
 Login/Logout(JWT)
 Oauth(with github)
 NodeJs with postgres
-/////////////////////////////
 Oauth(with google)
-
-
-Paytm-Payment
-GraphQl API
 Github
-
+Docker
+/////////////////////////////
 --Deployment---
 Nginx
 Pm2
-Docker
 Heroku
 
+Paytm-Payment
+
+GraphQl API
 Chatapp
 FIREBASE
 --------NOT---------
@@ -218,3 +216,8 @@ npm i bcryptjs body-parser cors express jsonwebtoken mongoose
 step to start postgres server
 > pg_ctl -D /usr/local/var/postgres start
 > 5324
+
+
+docker build . -t imagename
+docker image ls
+docker run -p 9800:7800 imagename
