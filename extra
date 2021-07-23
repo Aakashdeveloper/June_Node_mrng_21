@@ -20,16 +20,14 @@ Oauth(with github)
 NodeJs with postgres
 Oauth(with google)
 Github
-Docker
-/////////////////////////////
 --Deployment---
+Docker
+Heroku
 Nginx
 Pm2
-Heroku
-
-Paytm-Payment
-
 GraphQl API
+////////////////////////////
+Paytm-Payment
 Chatapp
 FIREBASE
 --------NOT---------
@@ -221,3 +219,25 @@ step to start postgres server
 docker build . -t imagename
 docker image ls
 docker run -p 9800:7800 imagename
+
+
+//////Pm2/////
+npm i -g pm2
+pm2 start startfilename
+pm2 status 
+pm2 stop name
+
+///////////
+npm i express axios express-graphql graphql
+
+///dummy api///
+npm -g json-server
+
+json-server --watch db.json --port 8800
+{
+  product(id:3){
+    name,
+    delivery,
+    category
+  }
+}
