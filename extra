@@ -27,8 +27,6 @@ Nginx
 Pm2
 GraphQl API
 Paytm-Payment
-////////////////////////////
-
 Chatapp
 FIREBASE
 --------NOT---------
@@ -242,3 +240,9 @@ json-server --watch db.json --port 8800
     category
   }
 }
+
+
+npm i -g firebase-tools
+firebase login
+firebase init
+firebase deploy
