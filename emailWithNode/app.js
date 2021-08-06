@@ -1,5 +1,6 @@
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 const msg = {
   to: 'ahanda205@gmail.com',
   from: 'ahanda206@hotmail.com', // Use the email address or domain you verified above
